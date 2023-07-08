@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-position: 25%;
+  padding: 50px 10px 0;
+}
+
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #e43a1c;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo > span {
+  font-size: 2em;
+}
+
+.logo h1 {
+  font-size: 1em;
+}
+
+.logo h1 > span {
+  display: block;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+  padding: 10px;
+}
+
+.logo:hover, .nav ul li:hover {
+  color: #b42e16;
+  cursor: pointer;
+}
+
+.home {
+  color: white;
+  text-align: center;
+  margin-top: 30vh;
+  font-size: 3rem;
+}
+
+.home * {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 20px #b42e16;
+}
+
+.home button {
+  color: white;
+  font-size: .5em;
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.home button:hover {
+  cursor: pointer;
+  text-shadow: unset;
+  background-color: white;
+  color: #b42e16;
+}
