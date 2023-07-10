@@ -1,23 +1,21 @@
-import { createDiv, createH1, createLi, createNav, createSpan, createUl } from "./elements";
-
 function createLogo() {
-  const logo = createDiv("");
-  const h1 = createH1("Oishi");
+  const logo = document.createElement("div");
+  const h1 = document.createElement("h1");
   logo.classList.add("logo");
-  h1.appendChild(createSpan("Ramen"));
-  logo.appendChild(createSpan("🍜"));
+  logo.innerHTML = "<span>🍜</span>";
+  h1.innerHTML = "Oishi <span>Ramen</span>";
   logo.appendChild(h1);
   return logo;
 }
 
 function createNavSection() {
-  const nav = createNav("");
-  const ul = createUl("");
+  const nav = document.createElement("nav");
+  const ul = document.createElement("ul");
   nav.classList.add("nav");
-  ul.appendChild(createLi("Home"));
-  ul.appendChild(createLi("Menu"));
-  ul.appendChild(createLi("Contact"));
-  nav.appendChild(createLogo(""));
+  ul.innerHTML = "<li>Home</li>";
+  ul.innerHTML += "<li>Menu</li>";
+  ul.innerHTML += "<li>Contact</li>";
+  nav.appendChild(createLogo());
   nav.appendChild(ul);
   return nav;
 }

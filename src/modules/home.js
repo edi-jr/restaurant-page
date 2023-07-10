@@ -1,11 +1,9 @@
-import { createButton, createH1, createP } from "./elements";
-
 function createHomeSection() {
   const main = document.createElement("main");
   main.classList.add("home");
-  main.appendChild(createH1("Oishi Ramen"));
-  main.appendChild(createP("The tastiest ramen in town!"));
-  main.appendChild(createButton("Order now"));
+  main.innerHTML = "<h1>Oishi Ramen</h1>";
+  main.innerHTML += "<p>The tastiest ramen in town!</p>";
+  main.innerHTML += "<button>Order now</button>";
   return main;
 }
 
