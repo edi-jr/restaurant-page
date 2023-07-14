@@ -1,9 +1,12 @@
+import loadMenu from "./menu";
+
 function createHomeSection() {
   const main = document.createElement("main");
   main.classList.add("home");
   main.innerHTML = "<h1>Oishi Ramen</h1>";
   main.innerHTML += "<p>The tastiest ramen in town!</p>";
   main.innerHTML += "<button>Order now</button>";
+  main.querySelector("button").addEventListener("click", loadMenu);
   return main;
 }
 
