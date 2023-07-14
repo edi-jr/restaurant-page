@@ -21,6 +21,7 @@ function createMenuSection() {
 
 function loadMenu() {
   const content = document.querySelector("#content");
+  content.removeChild(content.lastChild);
   const menu = createMenuSection();
   content.appendChild(menu);
 }

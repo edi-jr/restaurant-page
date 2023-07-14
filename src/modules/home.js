@@ -9,6 +9,9 @@ function createHomeSection() {
 
 function loadHome() {
   const content = document.querySelector("#content");
+  if(content.childElementCount > 1) {
+    content.removeChild(content.lastChild);
+  }
   const home = createHomeSection();
   content.appendChild(home);
 }

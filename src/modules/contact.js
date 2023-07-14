@@ -15,6 +15,7 @@ function createContactSection() {
 
 function loadContact() {
   const content = document.querySelector("#content");
+  content.removeChild(content.lastChild);
   const contact = createContactSection();
   content.appendChild(contact);
 }
