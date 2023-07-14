@@ -118,7 +118,7 @@ a {
   margin-top: 20px;
 }
 
-.menu h1 {
+.menu h1, .contact h1 {
   color: white;
   text-align: center;
   grid-column: 1 / -1;
@@ -148,4 +148,23 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   color: #e43a1c;
+}
+
+.contact {
+  border: 2px solid #e43a1c;
+  border-radius: 5px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+}
+
+.contact a {
+  display: block;
+  color: white;
+  font-size: 1.25em;
 }
