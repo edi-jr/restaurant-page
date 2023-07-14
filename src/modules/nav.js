@@ -12,9 +12,9 @@ function createNavSection() {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
   nav.classList.add("nav");
-  ul.innerHTML = "<li>Home</li>";
-  ul.innerHTML += "<li>Menu</li>";
-  ul.innerHTML += "<li>Contact</li>";
+  ul.innerHTML = "<li id='home'>Home</li>";
+  ul.innerHTML += "<li id='menu'>Menu</li>";
+  ul.innerHTML += "<li id='contact'>Contact</li>";
   nav.appendChild(createLogo());
   nav.appendChild(ul);
   return nav;
